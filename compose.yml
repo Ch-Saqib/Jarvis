@@ -1,0 +1,9 @@
+version: "3.12"
+
+services:
+  jarvis:
+    build:
+      context: ./01_jarvis
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000

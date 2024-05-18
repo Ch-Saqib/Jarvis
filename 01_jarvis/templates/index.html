@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Jarvis</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+</head>
+<body class="bg-gray-100 w-full">
+  <div class="flex">
+    <div
+      id="recordingIndicator"
+      style="
+        display: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+      "
+    ></div>
+    <button
+      id="startButton"
+      class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ml-10 mt-2"
+    >
+      <span class="flex">
+        <svg
+          class="mx-2"
+          fill="#ffffff"
+          height="20px"
+          width="20px"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        ></svg>
+        Start Recording
+      </span>
+    </button>
+    <button
+      id="stopButton"
+      style="display: none"
+      class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded ml-10 mt-2"
+    >
+      Stop Recording
+    </button>
+    <button
+      id="stopTranslationButton"
+      style="display: none"
+      class="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded ml-10 mt-2"
+    >
+      Stop Translator
+    </button>
+  </div>
+  <script src="static/js/script.js"></script>
+</body>
+</html>
